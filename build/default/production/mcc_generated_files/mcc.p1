@@ -4736,9 +4736,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.c: 78: void OSCILLATOR_Initialize(void) {
 [e :U _OSCILLATOR_Initialize ]
 [f ]
-[; ;mcc.c: 80: OSCCON = 0x60;
+[; ;mcc.c: 80: OSCCON = 0x78;
 "80
-[e = _OSCCON -> -> 96 `i `uc ]
+[e = _OSCCON -> -> 120 `i `uc ]
 [; ;mcc.c: 82: OSCSTAT = 0x00;
 "82
 [e = _OSCSTAT -> -> 0 `i `uc ]

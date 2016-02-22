@@ -6307,7 +6307,7 @@ EUSART_Initialize();
 
 void OSCILLATOR_Initialize(void) {
 
-OSCCON = 0x60;
+OSCCON = 0x78;
 
 OSCSTAT = 0x00;
 

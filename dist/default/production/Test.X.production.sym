@@ -1,7 +1,7 @@
 __CFG_PLLEN$ON 0 0 ABS 0
 __CFG_WRT$OFF 0 0 ABS 0
 __S0 8009 0 ABS 0
-__S1 73 0 ABS 0
+__S1 74 0 ABS 0
 __S2 0 0 ABS 0
 _GIE 5F 0 ABS 0
 __Hintentry 2 0 CODE 0
@@ -11,7 +11,7 @@ _LATA 10C 0 ABS 0
 _LATC 10E 0 ABS 0
 _WPUA 20C 0 ABS 0
 _WPUC 20E 0 ABS 0
-_main 7DD 0 CODE 0
+_main 7DA 0 CODE 0
 ___sp 0 0 STACK 2
 btemp 7E 0 ABS 0
 ltemp 7E 0 ABS 0
@@ -19,7 +19,7 @@ ttemp 7E 0 ABS 0
 wtemp 7E 0 ABS 0
 start 2 0 CODE 0
 _LATC1 871 0 ABS 0
-_EUSART_Write 7D5 0 CODE 0
+_EUSART_Write 7D2 0 CODE 0
 _TRISA 8C 0 ABS 0
 _TRISC 8E 0 ABS 0
 reset_vec 0 0 CODE 0
@@ -49,7 +49,6 @@ __CFG_STVREN$ON 0 0 ABS 0
 __CFG_ZCDDIS$ON 0 0 ABS 0
 __Hfunctab 0 0 CODE 0
 __Lfunctab 0 0 CODE 0
-_TRISC1 471 0 ABS 0
 __Hcommon 0 0 ABS 0
 __Lcommon 0 0 ABS 0
 __Heeprom_data 0 0 EEDATA 3
@@ -84,7 +83,7 @@ __Hsfr7 0 0 ABS 0
 __Lsfr7 0 0 ABS 0
 __Hsfr8 0 0 ABS 0
 __Lsfr8 0 0 ABS 0
-__end_of_EUSART_Write 7DD 0 CODE 0
+__end_of_EUSART_Write 7DA 0 CODE 0
 __Hsfr9 0 0 ABS 0
 __Lsfr9 0 0 ABS 0
 __Hcode 0 0 ABS 0
@@ -172,7 +171,7 @@ __Hbank8 0 0 BANK8 1
 __Lbank8 0 0 BANK8 1
 __Hbank9 0 0 BANK9 1
 __Lbank9 0 0 BANK9 1
-__ptext1 7D5 0 CODE 0
+__ptext1 7D2 0 CODE 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
 _PPSLOCKbits E0F 0 ABS 0
@@ -184,7 +183,7 @@ __Lstack 0 0 STACK 2
 __Hspace_0 8009 0 ABS 0
 __Lspace_0 0 0 ABS 0
 __CFG_IESO$ON 0 0 ABS 0
-__Hspace_1 73 0 ABS 0
+__Hspace_1 74 0 ABS 0
 __Lspace_1 0 0 ABS 0
 EUSART_Write@txData 70 0 COMMON 1
 __Hspace_2 0 0 ABS 0
@@ -263,7 +262,7 @@ __pcstackCOMMON 70 0 COMMON 1
 start_initialization 7FD 0 CODE 0
 __Hmaintext 0 0 ABS 0
 __Lmaintext 0 0 ABS 0
-__pmaintext 7DD 0 CODE 0
+__pmaintext 7DA 0 CODE 0
 __CFG_MCLRE$ON 0 0 ABS 0
 _OPTION_REGbits 95 0 ABS 0
 __CFG_FOSC$INTOSC 0 0 ABS 0
@@ -275,31 +274,29 @@ __CFG_LVP$OFF 0 0 ABS 0
 reset_vec 0 7 CODE 0 0
 cinit FFA FFF CODE FFA 0
 config 1000E 10011 CONFIG 1000E 0
-cstackCOMMON 70 72 COMMON 70 1
-maintext FBA FF9 CODE FBA 0
-text1 FAA FB9 CODE FAA 0
+cstackCOMMON 70 73 COMMON 70 1
+maintext FB4 FF9 CODE FB4 0
+text1 FA4 FB3 CODE FA4 0
 %locals
 dist/default/production\Test.X.production.obj
-C:\Users\Tom\AppData\Local\Temp\sacg.
-2015 7FD 0 CODE 0
-2018 7FD 0 CODE 0
+C:\Users\Tom\AppData\Local\Temp\s8ms.
+2013 7FD 0 CODE 0
+2016 7FD 0 CODE 0
+2022 7FD 0 CODE 0
 2024 7FD 0 CODE 0
-2026 7FD 0 CODE 0
-2027 7FE 0 CODE 0
+2025 7FE 0 CODE 0
 main.c
-16 7DD 0 CODE 0
-17 7DD 0 CODE 0
-18 7DF 0 CODE 0
-19 7E0 0 CODE 0
-23 7E2 0 CODE 0
-24 7E4 0 CODE 0
-25 7ED 0 CODE 0
-26 7EF 0 CODE 0
+16 7DA 0 CODE 0
+21 7DA 0 CODE 0
+23 7DA 0 CODE 0
+24 7DC 0 CODE 0
+25 7E9 0 CODE 0
+26 7EB 0 CODE 0
 28 7F8 0 CODE 0
 21 7FC 0 CODE 0
 mcc_generated_files/eusart.c
-91 7D5 0 CODE 0
-93 7D6 0 CODE 0
-92 7D6 0 CODE 0
-95 7D9 0 CODE 0
-96 7DC 0 CODE 0
+91 7D2 0 CODE 0
+93 7D3 0 CODE 0
+92 7D3 0 CODE 0
+95 7D6 0 CODE 0
+96 7D9 0 CODE 0

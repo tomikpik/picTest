@@ -5,7 +5,7 @@
  * Created on 17. unora 2016, 18:37
  */
 
-#define _XTAL_FREQ 2000000
+#define _XTAL_FREQ 16000000
 #include <xc.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -14,9 +14,9 @@
 
 
 void main(void) {
-    ANSELA = 0; 
-    ANSELC = 0;
-    TRISC1 = 0; //0=output, 1=input    
+    //ANSELA = 0; 
+    //ANSELC = 0;
+    //TRISC1 = 0; //0=output, 1=input    
     
     while(1)
     {

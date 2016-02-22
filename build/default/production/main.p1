@@ -1,12 +1,6 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
-"2642 C:\Program Files (x86)\Microchip\xc8\v1.36\include\pic16f1704.h
-[v _ANSELA `Vuc ~T0 @X0 0 e@396 ]
-"2686
-[v _ANSELC `Vuc ~T0 @X0 0 e@398 ]
-"13139
-[v _TRISC1 `Vb ~T0 @X0 0 e@1137 ]
-"12295
+"12295 C:\Program Files (x86)\Microchip\xc8\v1.36\include\pic16f1704.h
 [v _LATC1 `Vb ~T0 @X0 0 e@2161 ]
 [v F4761 `(v ~T0 @X0 1 tf1`ul ]
 "152 C:\Program Files (x86)\Microchip\xc8\v1.36\include\pic.h
@@ -4712,15 +4706,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 16: void main(void) {
 [e :U _main ]
 [f ]
-[; ;main.c: 17: ANSELA = 0;
-"17
-[e = _ANSELA -> -> 0 `i `uc ]
-[; ;main.c: 18: ANSELC = 0;
-"18
-[e = _ANSELC -> -> 0 `i `uc ]
-[; ;main.c: 19: TRISC1 = 0;
-"19
-[e = _TRISC1 -> -> 0 `i `b ]
 [; ;main.c: 21: while(1)
 "21
 [e :U 588 ]
@@ -4730,15 +4715,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 23: LATC1 = 0;
 "23
 [e = _LATC1 -> -> 0 `i `b ]
-[; ;main.c: 24: _delay((unsigned long)((50)*(2000000/4000.0)));
+[; ;main.c: 24: _delay((unsigned long)((50)*(16000000/4000.0)));
 "24
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 [; ;main.c: 25: LATC1 = 1;
 "25
 [e = _LATC1 -> -> 1 `i `b ]
-[; ;main.c: 26: _delay((unsigned long)((50)*(2000000/4000.0)));
+[; ;main.c: 26: _delay((unsigned long)((50)*(16000000/4000.0)));
 "26
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 [; ;main.c: 28: EUSART_Write((uint8_t)1);
 "28
 [e ( _EUSART_Write (1 -> -> 1 `i `uc ]

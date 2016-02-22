@@ -52,7 +52,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include <stdbool.h>
 #include "eusart.h"
 
-#define _XTAL_FREQ  2000000
+#define _XTAL_FREQ  16000000
 
 /**
  * @Param

@@ -11,15 +11,15 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$dist/default/production\Test.X.production.obj
-cinit CODE 0 7FD 7FD 3 2
-text1 CODE 0 7D5 7D5 8 2
-maintext CODE 0 7DD 7DD 20 2
-cstackCOMMON COMMON 1 70 70 3 1
-$C:\Users\Tom\AppData\Local\Temp\sacg.obj
+$C:\Users\Tom\AppData\Local\Temp\s8ms.obj
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 0 8007 8007 2 2
+$dist/default/production\Test.X.production.obj
+cinit CODE 0 7FD 7FD 3 2
+text1 CODE 0 7D2 7D2 8 2
+maintext CODE 0 7DA 7DA 23 2
+cstackCOMMON COMMON 1 70 70 4 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -40,9 +40,9 @@ BANK3 1A0-1EF 1
 BANK4 220-26F 1
 BANK5 2A0-2EF 1
 BANK6 320-32F 1
-CONST 4-7D4 2
+CONST 4-7D1 2
 CONST 800-FFF 2
-ENTRY 4-7D4 2
+ENTRY 4-7D1 2
 ENTRY 800-FFF 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
@@ -68,7 +68,7 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 2000-21EF 1
-CODE 4-7D4 2
+CODE 4-7D1 2
 CODE 800-FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -81,10 +81,10 @@ SFR7 380-3EF 1
 SFR8 400-46F 1
 SFR9 480-4EF 1
 BIGRAM 2000-21EF 1
-COMMON 73-7D 1
-STRCODE 4-7D4 2
+COMMON 74-7D 1
+STRCODE 4-7D1 2
 STRCODE 800-FFF 2
-STRING 4-7D4 2
+STRING 4-7D1 2
 STRING 800-FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -100,24 +100,22 @@ STRING 800-FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Test.X.production.obj
-7FD cinit CODE >2015:C:\Users\Tom\AppData\Local\Temp\sacg.
-7FD cinit CODE >2018:C:\Users\Tom\AppData\Local\Temp\sacg.
-7FD cinit CODE >2024:C:\Users\Tom\AppData\Local\Temp\sacg.
-7FD cinit CODE >2026:C:\Users\Tom\AppData\Local\Temp\sacg.
-7FE cinit CODE >2027:C:\Users\Tom\AppData\Local\Temp\sacg.
-7D5 text1 CODE >91:C:\Users\Tom\MPLABXProjects\Test.X\mcc_generated_files/eusart.c
-7D6 text1 CODE >92:C:\Users\Tom\MPLABXProjects\Test.X\mcc_generated_files/eusart.c
-7D6 text1 CODE >93:C:\Users\Tom\MPLABXProjects\Test.X\mcc_generated_files/eusart.c
-7D9 text1 CODE >95:C:\Users\Tom\MPLABXProjects\Test.X\mcc_generated_files/eusart.c
-7DC text1 CODE >96:C:\Users\Tom\MPLABXProjects\Test.X\mcc_generated_files/eusart.c
-7DD maintext CODE >16:C:\Users\Tom\MPLABXProjects\Test.X\main.c
-7DD maintext CODE >17:C:\Users\Tom\MPLABXProjects\Test.X\main.c
-7DF maintext CODE >18:C:\Users\Tom\MPLABXProjects\Test.X\main.c
-7E0 maintext CODE >19:C:\Users\Tom\MPLABXProjects\Test.X\main.c
-7E2 maintext CODE >23:C:\Users\Tom\MPLABXProjects\Test.X\main.c
-7E4 maintext CODE >24:C:\Users\Tom\MPLABXProjects\Test.X\main.c
-7ED maintext CODE >25:C:\Users\Tom\MPLABXProjects\Test.X\main.c
-7EF maintext CODE >26:C:\Users\Tom\MPLABXProjects\Test.X\main.c
+7FD cinit CODE >2013:C:\Users\Tom\AppData\Local\Temp\s8ms.
+7FD cinit CODE >2016:C:\Users\Tom\AppData\Local\Temp\s8ms.
+7FD cinit CODE >2022:C:\Users\Tom\AppData\Local\Temp\s8ms.
+7FD cinit CODE >2024:C:\Users\Tom\AppData\Local\Temp\s8ms.
+7FE cinit CODE >2025:C:\Users\Tom\AppData\Local\Temp\s8ms.
+7D2 text1 CODE >91:C:\Users\Tom\MPLABXProjects\Test.X\mcc_generated_files/eusart.c
+7D3 text1 CODE >92:C:\Users\Tom\MPLABXProjects\Test.X\mcc_generated_files/eusart.c
+7D3 text1 CODE >93:C:\Users\Tom\MPLABXProjects\Test.X\mcc_generated_files/eusart.c
+7D6 text1 CODE >95:C:\Users\Tom\MPLABXProjects\Test.X\mcc_generated_files/eusart.c
+7D9 text1 CODE >96:C:\Users\Tom\MPLABXProjects\Test.X\mcc_generated_files/eusart.c
+7DA maintext CODE >16:C:\Users\Tom\MPLABXProjects\Test.X\main.c
+7DA maintext CODE >21:C:\Users\Tom\MPLABXProjects\Test.X\main.c
+7DA maintext CODE >23:C:\Users\Tom\MPLABXProjects\Test.X\main.c
+7DC maintext CODE >24:C:\Users\Tom\MPLABXProjects\Test.X\main.c
+7E9 maintext CODE >25:C:\Users\Tom\MPLABXProjects\Test.X\main.c
+7EB maintext CODE >26:C:\Users\Tom\MPLABXProjects\Test.X\main.c
 7F8 maintext CODE >28:C:\Users\Tom\MPLABXProjects\Test.X\main.c
 7FC maintext CODE >21:C:\Users\Tom\MPLABXProjects\Test.X\main.c
 # %SYMTAB Section
@@ -134,7 +132,7 @@ $dist/default/production\Test.X.production.obj
 %SYMTAB
 ___latbits 1 0 ABS 0 - dist/default/production\Test.X.production.obj
 __Hspace_0 8009 0 ABS 0 - -
-__Hspace_1 73 0 ABS 0 - -
+__Hspace_1 74 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
@@ -149,14 +147,14 @@ _LATA 10C 0 ABS 0 - dist/default/production\Test.X.production.obj
 _LATC 10E 0 ABS 0 - dist/default/production\Test.X.production.obj
 _WPUA 20C 0 ABS 0 - dist/default/production\Test.X.production.obj
 _WPUC 20E 0 ABS 0 - dist/default/production\Test.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Tom\AppData\Local\Temp\sacg.obj
-_main FBA 0 CODE 0 maintext dist/default/production\Test.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Tom\AppData\Local\Temp\s8ms.obj
+_main FB4 0 CODE 0 maintext dist/default/production\Test.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\Test.X.production.obj
 ltemp 7E 0 ABS 0 - dist/default/production\Test.X.production.obj
-start 4 0 CODE 0 init C:\Users\Tom\AppData\Local\Temp\sacg.obj
+start 4 0 CODE 0 init C:\Users\Tom\AppData\Local\Temp\s8ms.obj
 ttemp 7E 0 ABS 0 - dist/default/production\Test.X.production.obj
 wtemp 7E 0 ABS 0 - dist/default/production\Test.X.production.obj
-_EUSART_Write FAA 0 CODE 0 text1 dist/default/production\Test.X.production.obj
+_EUSART_Write FA4 0 CODE 0 text1 dist/default/production\Test.X.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\Test.X.production.obj
 _OPTION_REGbits 95 0 ABS 0 - dist/default/production\Test.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
@@ -165,12 +163,12 @@ ttemp1 81 0 ABS 0 - dist/default/production\Test.X.production.obj
 ttemp2 84 0 ABS 0 - dist/default/production\Test.X.production.obj
 ttemp3 87 0 ABS 0 - dist/default/production\Test.X.production.obj
 ttemp4 7F 0 ABS 0 - dist/default/production\Test.X.production.obj
-intlevel0 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\sacg.obj
-intlevel1 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\sacg.obj
-intlevel2 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\sacg.obj
-intlevel3 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\sacg.obj
-intlevel4 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\sacg.obj
-intlevel5 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\sacg.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\s8ms.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\s8ms.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\s8ms.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\s8ms.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\s8ms.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Tom\AppData\Local\Temp\s8ms.obj
 wtemp0 7E 0 ABS 0 - dist/default/production\Test.X.production.obj
 wtemp1 80 0 ABS 0 - dist/default/production\Test.X.production.obj
 wtemp2 82 0 ABS 0 - dist/default/production\Test.X.production.obj
@@ -184,16 +182,15 @@ __size_of_EUSART_Write 0 0 ABS 0 - dist/default/production\Test.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELA 18C 0 ABS 0 - dist/default/production\Test.X.production.obj
 _ANSELC 18E 0 ABS 0 - dist/default/production\Test.X.production.obj
-__end_of_EUSART_Write FBA 0 CODE 0 text1 dist/default/production\Test.X.production.obj
+__end_of_EUSART_Write FB4 0 CODE 0 text1 dist/default/production\Test.X.production.obj
 __Lmaintext 0 0 ABS 0 maintext -
 start_initialization FFA 0 CODE 0 cinit dist/default/production\Test.X.production.obj
 _OSCCON 99 0 ABS 0 - dist/default/production\Test.X.production.obj
 _RC1REG 199 0 ABS 0 - dist/default/production\Test.X.production.obj
 _RC1STA 19D 0 ABS 0 - dist/default/production\Test.X.production.obj
-_TRISC1 471 0 ABS 0 - dist/default/production\Test.X.production.obj
 _TX1REG 19A 0 ABS 0 - dist/default/production\Test.X.production.obj
 _TX1STA 19E 0 ABS 0 - dist/default/production\Test.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Tom\AppData\Local\Temp\sacg.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Tom\AppData\Local\Temp\s8ms.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -323,12 +320,12 @@ __Ltext 0 0 ABS 0 text -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _GIE 5F 0 ABS 0 - dist/default/production\Test.X.production.obj
 __S0 8009 0 ABS 0 - -
-__S1 73 0 ABS 0 - -
+__S1 74 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __CFG_PLLEN$ON 0 0 ABS 0 - dist/default/production\Test.X.production.obj
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Test.X.production.obj
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Tom\AppData\Local\Temp\sacg.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Tom\AppData\Local\Temp\s8ms.obj
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\Test.X.production.obj
 __Lbank10 0 0 BANK10 1 bank10 -
 __Lbank11 0 0 BANK11 1 bank11 -
@@ -352,7 +349,7 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext FBA 0 CODE 0 maintext dist/default/production\Test.X.production.obj
+__pmaintext FB4 0 CODE 0 maintext dist/default/production\Test.X.production.obj
 __Lbigram 0 0 ABS 0 bigram -
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production\Test.X.production.obj
 __Lcommon 0 0 ABS 0 common -
@@ -360,8 +357,8 @@ __Lconfig 1000E 0 CONFIG 0 config -
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\Test.X.production.obj
 __CFG_IESO$ON 0 0 ABS 0 - dist/default/production\Test.X.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Test.X.production.obj
-stackhi 21EF 0 ABS 0 - C:\Users\Tom\AppData\Local\Temp\sacg.obj
-stacklo 2000 0 ABS 0 - C:\Users\Tom\AppData\Local\Temp\sacg.obj
+stackhi 21EF 0 ABS 0 - C:\Users\Tom\AppData\Local\Temp\s8ms.obj
+stacklo 2000 0 ABS 0 - C:\Users\Tom\AppData\Local\Temp\s8ms.obj
 _OSCSTAT 9A 0 ABS 0 - dist/default/production\Test.X.production.obj
 _OSCTUNE 98 0 ABS 0 - dist/default/production\Test.X.production.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\Test.X.production.obj
@@ -379,7 +376,7 @@ __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\Test.X.production.obj
 _PPSLOCKbits E0F 0 ABS 0 - dist/default/production\Test.X.production.obj
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__ptext1 FAA 0 CODE 0 text1 dist/default/production\Test.X.production.obj
+__ptext1 FA4 0 CODE 0 text1 dist/default/production\Test.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
@@ -431,8 +428,8 @@ _RC4PPSbits EA4 0 ABS 0 - dist/default/production\Test.X.production.obj
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FD FFA 3 2
-text1 0 7D5 FAA 8 2
-maintext 0 7DD FBA 20 2
-cstackCOMMON 1 70 70 3 1
+text1 0 7D2 FA4 8 2
+maintext 0 7DA FB4 23 2
+cstackCOMMON 1 70 70 4 1
 reset_vec 0 0 0 4 2
 config 0 8007 1000E 2 2

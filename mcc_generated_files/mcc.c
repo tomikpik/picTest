@@ -76,8 +76,8 @@ void SYSTEM_Initialize(void) {
 }
 
 void OSCILLATOR_Initialize(void) {
-    // SCS FOSC; SPLLEN disabled; IRCF 2MHz_HF; 
-    OSCCON = 0x60;
+    // SCS FOSC; SPLLEN disabled; IRCF 16MHz_HF; 
+    OSCCON = 0x78;
     // SOSCR disabled; LFIOFR disabled; HFIOFL not2percent_acc; OSTS intosc; PLLR disabled; HFIOFS not0.5percent_acc; HFIOFR disabled; MFIOFR disabled; 
     OSCSTAT = 0x00;
     // TUN 0x0; 
