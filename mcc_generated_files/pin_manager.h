@@ -59,6 +59,23 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
+// get/set IO_LED aliases
+#define IO_LED_TRIS               TRISC1
+#define IO_LED_LAT                LATC1
+#define IO_LED_PORT               RC1
+#define IO_LED_WPU                WPUC1
+#define IO_LED_ANS                ANSC1
+#define IO_LED_SetHigh()    do { LATC1 = 1; } while(0)
+#define IO_LED_SetLow()   do { LATC1 = 0; } while(0)
+#define IO_LED_Toggle()   do { LATC1 = ~LATC1; } while(0)
+#define IO_LED_GetValue()         RC1
+#define IO_LED_SetDigitalInput()    do { TRISC1 = 1; } while(0)
+#define IO_LED_SetDigitalOutput()   do { TRISC1 = 0; } while(0)
+
+#define IO_LED_SetPullup()    do { WPUC1 = 1; } while(0)
+#define IO_LED_ResetPullup()   do { WPUC1 = 0; } while(0)
+#define IO_LED_SetAnalogMode()   do { ANSC1 = 1; } while(0)
+#define IO_LED_SetDigitalMode()   do { ANSC1 = 0; } while(0)
 // get/set RX aliases
 #define RX_TRIS               TRISC3
 #define RX_LAT                LATC3

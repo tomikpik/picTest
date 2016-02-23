@@ -6327,20 +6327,38 @@ uint8_t EUSART_Read(void);
 # 135
 void EUSART_Write(uint8_t txData);
 
-# 16 "main.c"
+# 124 "mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_Initialize(void);
+
+# 136
+void PIN_MANAGER_IOC(void);
+
+# 17 "main.c"
 void main(void) {
 
-
-
+SYSTEM_Initialize();
 
 while(1)
 {
-LATC1 = 0;
+int i = 200;
+while(i>0){
+do { LATC1 = ~LATC1; } while(0);
+_delay((unsigned long)((3)*(16000000/4000.0)));
+i--;
+}
+i = 200;
+while(i>0){
+do { LATC1 = ~LATC1; } while(0);
+_delay((unsigned long)((20)*(16000000/4000.0)));
+i--;
+}
+i = 100;
+while(i>0){
+do { LATC1 = ~LATC1; } while(0);
 _delay((unsigned long)((50)*(16000000/4000.0)));
-LATC1 = 1;
-_delay((unsigned long)((50)*(16000000/4000.0)));
-
-EUSART_Write((uint8_t)1);
+i--;
+}
 
 }
 }
+

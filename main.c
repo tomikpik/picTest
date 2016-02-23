@@ -10,22 +10,35 @@
 #include <stdint.h>
 #include <stdio.h>
 #include "mcc_generated_files/eusart.h"
+#include "mcc_generated_files/pin_manager.h"
 
 
 
 void main(void) {
-    //ANSELA = 0; 
-    //ANSELC = 0;
-    //TRISC1 = 0; //0=output, 1=input    
     
+    SYSTEM_Initialize();  
+        
     while(1)
     {
-        LATC1 = 0;
-        __delay_ms(50);
-        LATC1 = 1;
-        __delay_ms(50);
-        
-        EUSART_Write((uint8_t)1);
-        
+        int i = 200;
+        while(i>0){
+            IO_LED_Toggle();
+            __delay_ms(3);
+            i--;
+        }
+        i = 200;
+        while(i>0){
+            IO_LED_Toggle();
+            __delay_ms(20);
+            i--;
+        }
+        i = 100;
+        while(i>0){
+            IO_LED_Toggle();
+            __delay_ms(50);
+            i--;
+        }
+        //EUSART_Write((uint8_t)1);
     }
 }
+
